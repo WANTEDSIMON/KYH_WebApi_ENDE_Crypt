@@ -1,22 +1,11 @@
 ﻿name: 🛠️ Dev Branch - Build
 
 on:
-  push:
-    branches:
-      - dev
-      - Dev
-      - Dev_*
-      - dev_*
-      - Dev.*
-      - dev.*
-  pull_request:
-    branches:
-      - dev
-      - Dev
-      - Dev_*
-      - dev_*
-      - Dev.*
-      - dev.*
+  workflow_run:
+    workflows: ["🧪 Test - Run Unit Tests"]
+    types:
+      - completed
+
 
 jobs:
   build: 
