@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Register Services for Dependency Injection (DI)
 builder.Services.AddSingleton<IKeyService, KeyService>();
+builder.Services.AddSingleton<IPasswordService, PasswordService>();
 
 
 var app = builder.Build();
@@ -16,7 +17,7 @@ app.MapGet("/", () => "Hello Earth 🌎!");
 
 // Map API Endpoints
 app.MapKeyEndpoints();
-
+app.MapPasswordEndpoints();
 
 app.Run();
 
