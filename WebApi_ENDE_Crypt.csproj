@@ -6,6 +6,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>WebApi_ENDE_Crypt</RootNamespace>
   </PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="coverlet.collector" Version="6.0.4">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+		<PackageReference Include="xunit" Version="2.9.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="5.0.12" />
+  </ItemGroup>
 
 
 </Project>
