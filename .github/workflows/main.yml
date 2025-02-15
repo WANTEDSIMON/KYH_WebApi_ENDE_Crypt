@@ -1,10 +1,12 @@
 ﻿name: 🚀 Main Branch - Deploy
 
 on:
-  workflow_run:
-    workflows: ["🛠️ Dev - Build After Tests Pass"]
-    types:
-      - completed
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main 
 
 jobs:
   build:
