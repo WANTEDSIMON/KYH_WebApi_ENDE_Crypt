@@ -1,4 +1,4 @@
-name: Run Projekt Test
+﻿name: 🧪 Test - Run Unit Tests
 on:
   push:
     branches:
