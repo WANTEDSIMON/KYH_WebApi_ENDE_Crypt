@@ -1,5 +1,9 @@
 # KYH_WebApi_ENDE_Crypt
 
+## Overview
+
+This project is a minimal ASP.NET Core Web API that provides Base64 encoding and decoding services for text data. It allows users to encode plain text into Base64 format and decode Base64-encoded strings back to their original text representation. This API is designed for seamless text transformation, making it useful for data encoding in web applications, secure text transmission, and handling text-based data conversion.
+
 ---
 
 <!-- Step 1 Main -->
